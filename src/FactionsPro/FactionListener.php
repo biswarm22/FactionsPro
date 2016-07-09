@@ -94,8 +94,6 @@ class FactionListener implements Listener {
 				$player1 = $factionDamage->getEntity()->getPlayer()->getName();
 				$player2 = $factionDamage->getDamager()->getPlayer()->getName();
 				if($this->plugin->sameFaction($player1, $player2) == true) {
-					$factionDamage->setCancelled(true);
-				}
 			}
 		}
 	}
